@@ -44,7 +44,6 @@ class Simditor extends Widget
         'blockquote',
         'code',
         'table',
-        '|',
         'link',
         'image',
         'hr',
@@ -95,6 +94,7 @@ class Simditor extends Widget
 
         $this->pluginOptions['upload'] = [
             'url' => Url::to(['upload']),
+            'fileKey' => 'upload_file',
         ];
 
         $pluginOptions = Json::encode($this->pluginOptions);
