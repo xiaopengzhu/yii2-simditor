@@ -47,6 +47,7 @@ class Simditor extends Widget
     {
         $id = $this->options['id'];
         $options['textarea'] = new JsExpression("$('#{$id}')");
+        $options = array_merge($options, $this->options);
         return Json::encode($options);
     }
 
