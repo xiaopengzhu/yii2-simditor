@@ -2,6 +2,8 @@ yii2 simditor extension
 =======================
 yii2 simditor extension
 
+simditor 2.3.6
+
 Installation
 ------------
 
