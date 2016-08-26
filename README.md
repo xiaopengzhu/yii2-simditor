@@ -12,7 +12,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist zxp/yii2-simditor "*"
+composer require --prefer-dist zxp/yii2-simditor "*"
 ```
 
 or add
@@ -30,4 +30,31 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \zxp\simditor\AutoloadExample::widget(); ?>```
+<?= \zxp\simditor\Simditor::widget(); ?>
+or
+<?= $form->field($model, 'content')->widget(Simditor::className(), [
+    'options' => [
+        'value' => 'test',
+    ],
+    'pluginOptions' => [
+        'toolbar' => ['title', 'bold']
+    ]
+]);?>
+```
+Upload Setting
+---
+add in controller
+```php
+public function actions()
+    {
+        return [
+            'upload' => [
+                'class' => 'zxp\simditor\SimditorAction',
+                'config' => [
+                    'uploadDir' => '@webroot/upload/editor',
+                    'uploadUrl' => '@web/upload/editor'
+                ]
+            ]
+        ];
+    }
+```
