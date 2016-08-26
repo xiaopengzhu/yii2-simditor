@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist zxp/yii2-simditor "*"
+composer require --prefer-dist zxp/yii2-simditor:^1.0
 ```
 
 or add
 
 ```
-"zxp/yii2-simditor": "*"
+"zxp/yii2-simditor": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
