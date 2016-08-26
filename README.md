@@ -43,10 +43,10 @@ or
 ```
 Upload Setting
 ---
-add in controller
+Add in controller
 ```php
 public function actions()
-    {
+{
         return [
             'upload' => [
                 'class' => 'zxp\simditor\SimditorAction',
@@ -56,5 +56,5 @@ public function actions()
                 ]
             ]
         ];
-    }
+}
 ```
